@@ -1,7 +1,7 @@
 # 개인정보처리방침 / Privacy Policy
 
 **앱**: Taptrol (`io.github.gyeongyeon2718.taptrol`)
-**최종 수정**: 2026-08-07
+**최종 수정**: 2026-08-25
 **문의**: gpgy2718@gmail.com
 
 ---
@@ -58,6 +58,20 @@ Taptrol은 **개인정보를 수집하지 않습니다.** 개발자가 운영하
 - 화면 내용, 입력한 문자
 - 사용 통계, 크래시 리포트, 광고 식별자
 
+### 결제 (Taptrol Pro)
+
+Taptrol Pro는 **Google Play 인앱 결제**로 1회 구매합니다. 결제는 전적으로 Google Play가
+처리하며, **카드 번호나 계정 정보는 앱이 보지도, 받지도, 저장하지도 않습니다.**
+
+앱이 Google Play에 묻는 것은 "이 사용자가 Pro를 보유했는가"라는 예/아니오 한 가지뿐이고,
+그 답만 워치에 저장해 Play에 연결할 수 없을 때 Pro 기능이 사라지지 않도록 합니다.
+구매 내역, 결제 수단, 영수증은 개발자에게 전달되지 않습니다.
+
+Google Play가 결제 과정에서 처리하는 정보는 Google의 개인정보처리방침을 따릅니다:
+https://policies.google.com/privacy
+
+무료 버전만 사용하는 경우 Google Play 결제 관련 통신은 전혀 발생하지 않습니다.
+
 ### 데이터 삭제
 
 - **워치**: 앱을 삭제하면 저장된 데이터가 모두 지워집니다. 앱 안에서 `연결 해제` 후
@@ -111,6 +125,21 @@ slide-control keystrokes, and the pairing/authentication messages. All of it run
 
 Accounts, names, emails, phone numbers, location, contacts, photos, files, screen contents,
 typed text, usage analytics, crash reports, advertising identifiers.
+
+### Purchases (Taptrol Pro)
+
+Taptrol Pro is a one-time purchase made through **Google Play's billing system**. Google Play
+handles the payment end to end: **the app never sees, receives or stores card numbers or
+account details.**
+
+The only thing the app asks Google Play is a single yes/no question — does this user own Pro —
+and only that answer is cached on the watch, so Pro features do not disappear when Play is
+unreachable. No purchase history, payment method or receipt reaches the developer.
+
+Whatever Google Play processes during a purchase is governed by Google's own privacy policy:
+https://policies.google.com/privacy
+
+If you only use the free version, no billing communication happens at all.
 
 ### Deleting your data
 
