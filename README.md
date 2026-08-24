@@ -20,6 +20,7 @@
 | ⌚ **워치 앱** | Google Play (Wear OS) |
 | 💻 **PC 리시버** | [Releases](../../releases/latest) — `TaptrolReceiver.exe` |
 | 🔐 **개인정보처리방침** | [PRIVACY.md](PRIVACY.md) |
+| 📄 **오픈소스 고지** | [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) |
 
 ---
 
@@ -33,7 +34,26 @@
 3. 창에 PC 이름·IP와 **16자리 확인 코드**(`7A4F-D210-B39C-82E1`)가 표시됩니다.
 
 > ⚠️ 코드 서명 전까지 Windows SmartScreen이 "알 수 없는 게시자" 경고를 띄웁니다.
-> `추가 정보 → 실행`으로 진행하세요. 아래 SHA-256으로 파일 무결성을 확인하실 수 있습니다.
+> `추가 정보 → 실행`으로 진행하세요. 아래 방법으로 파일 무결성을 먼저 확인하실 수 있습니다.
+
+<details>
+<summary><b>다운로드 파일 검증하기 (SHA-256)</b></summary>
+
+릴리스마다 각 파일 옆에 같은 이름의 `.sha256` 파일이 함께 올라갑니다.
+값을 여기 적어두지 않는 이유는 릴리스마다 달라지기 때문입니다 — 받으신 버전의
+`.sha256`을 같이 내려받아 대조하세요.
+
+PowerShell에서:
+
+```powershell
+Get-FileHash .\TaptrolReceiver.exe -Algorithm SHA256 | Select-Object -ExpandProperty Hash
+Get-Content .\TaptrolReceiver.exe.sha256
+```
+
+두 줄에 찍힌 64자리 값이 같으면 파일이 온전한 것입니다. 다르면 실행하지 마시고
+다시 받으세요.
+
+</details>
 
 ### 2. 워치와 페어링
 
@@ -87,6 +107,7 @@ PC와 워치가 **같은 Wi-Fi**에 있어야 합니다 (워치가 LTE나 블루
 - **개발자 서버가 존재하지 않습니다.** 데이터는 사용자의 기기와 로컬 네트워크를 벗어나지 않습니다
 
 자세한 내용은 [PRIVACY.md](PRIVACY.md)를 참고하세요.
+리시버에 포함된 오픈소스 구성요소는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다.
 
 ---
 
