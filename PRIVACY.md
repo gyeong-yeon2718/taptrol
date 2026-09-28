@@ -1,7 +1,7 @@
 # 개인정보처리방침 / Privacy Policy
 
 **앱**: Taptrol (`io.github.gyeongyeon2718.taptrol`)
-**최종 수정**: 2026-08-25
+**최종 수정**: 2026-09-28
 **문의**: gpgy2718@gmail.com
 
 ---
@@ -49,6 +49,14 @@ Taptrol은 **개인정보를 수집하지 않습니다.** 개발자가 운영하
 - 페어링·인증 메시지
 
 모든 통신은 **인증서 고정(certificate pinning)을 적용한 TLS 1.2 이상**으로 암호화됩니다.
+
+### PC 리시버의 업데이트 확인 (9.10.0부터)
+
+켜져 있으면 PC 리시버가 **하루 한 번** GitHub(`api.github.com`)에 이 저장소의 최신 버전 번호를
+묻습니다. 요청에는 리시버 버전 외에 아무것도 담기지 않습니다(워치, 페어링, 사용 기록 없음).
+일반적인 웹 요청처럼 GitHub이 PC의 IP 주소를 볼 수 있으며, 개발자는 이 요청을 받지도 보지도
+않습니다. 리시버의 `⚙ 설정 → 새 버전 자동 확인`에서 끌 수 있고, Microsoft Store 버전은 확인하지
+않습니다.
 
 ### 수집하지 않는 것
 
@@ -120,6 +128,14 @@ log stays on the PC and is never uploaded.
 Only between the watch and the PC, never over the internet: cursor deltas, clicks, scrolls,
 slide-control keystrokes, and the pairing/authentication messages. All of it runs over
 **TLS 1.2+ with certificate pinning**.
+
+### The PC receiver's update check (from 9.10.0)
+
+When enabled, the PC receiver asks GitHub (`api.github.com`) **once a day** for the latest version
+number of this repository. The request carries nothing but the receiver's version — no watch,
+pairing or usage information. Like any web request, GitHub can see the PC's IP address; the
+developer neither receives nor sees it. Turn it off under `⚙ Settings → Check for new versions
+automatically`; the Microsoft Store build does not check at all.
 
 ### Not collected
 
